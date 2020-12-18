@@ -10,7 +10,55 @@
 <body>
     <h1>Forms Demos</h1>
 
-    <form action=""></form>
+    <!-- where to go and post method. tacos goes nowhere right now
+    but here's some input tyopes -->
+    <form action="/tacos">
+        <p>
+            <label for="username">Enter a Username:</label>
+            <input id="username" type="text" placeholder="username" name="username">
+        </p>
+        <label for="password">Enter a Password</label>
+        <input id="password" type="password" placeholder="password" name="password">
+        <p>
+            <label for="color">Pick a Color</label>
+            <input id="color" type="color" name="color">
+        </p>
+        <p>
+            <label for="number">Choose a Number</label>
+            <input id="number" type="number" placeholder="enter number" name="num">
+        </p>
+
+        <!-- default behavior inside of a form submits the form action -->
+        <button>Submit</button>
+        <button type=button>Do not submit</button>
+        <!-- button as an input type -->
+        <input type="submit" value="click me">
+
+        <!-- next example
+<label>
+    Enter a Number:
+    <input type="number" placeholder="enter a number">
+</label> -->
+    </form>
+    <button>Button outside form</button>
+
+    <!-- sending search examples -->
+    <form action="https://duckduckgo.com/?q=">
+        <p>
+            <label for="duckduckgo">Search DuckDuckGo</label>
+            <!-- duckduckgo search url looks for 'q' so we name it the same -->
+            <input id="duckduckgo" type="text" placeholder="enter search" name="q">
+        </p>
+        <button>Search DuckDuckGO</button>
+    </form>
+    <form action="https://www.reddit.com/search/?">
+        <p>
+            <label for="reddit">Search Reddit</label>
+            <input id="reddit" type="text" placeholder="search reddit" name="q">
+        </p>
+        <button>Search Reddit</button>
+    </form>
+
 </body>
 
 </html>
