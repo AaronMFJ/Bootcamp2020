@@ -12,8 +12,10 @@
 
     <!-- where to go and post method. tacos goes nowhere right now
     but here's some input tyopes -->
+    <h2>Generic Form Labels</h2>
     <form action="/tacos">
         <p>
+            <!-- id and for need to match to be hooked together -->
             <label for="username">Enter a Username:</label>
             <input id="username" type="text" placeholder="username" name="username">
         </p>
@@ -43,6 +45,8 @@
     <button>Button outside form</button>
 
     <!-- sending search examples -->
+    <!-- if you dont add a button, 'enter' will submit -->
+    <h2>Search Hijacks</h2>
     <form action="https://duckduckgo.com/?q=">
         <p>
             <label for="duckduckgo">Search DuckDuckGo</label>
@@ -58,6 +62,34 @@
         </p>
         <button>Search Reddit</button>
     </form>
+    <h2>Checkboxes and other inputs</h2>
+    <p>
+    <form action="birds">
+        <input type="checkbox" name="agree_tos" id="agree" checked>
+        <label for="agree">I agree to everything</label>
+        <!-- using a button with checkbox will submit the action (birds) -->
+        <button>Submit</button>
+        <!-- Grouping radio buttons together done via matching name (only able to select one) -->
+        <p>
+            <label for="size_xs">XS</label>
+            <!-- you need 'value' for submitting a seleced radio button. -->
+            <input type="radio" name="size" id="size_xs" value="xs">
+            <label for="size_med">Med</label>
+            <input type="radio" name="size" id="size_med" value="med">
+            <label for="size_lar">Large</label>
+            <input type="radio" name="size" id="size_lar" value="lar">
+        </p>
+        <!-- submitting looks like this example /birds?agree_tos=on&size=lar -->
+        <p>
+            <label for="meal_select">Please select an entree</label>
+            <select name="meal" id="meal_select">
+                <option value="fish">Fish</option>
+                <option value="veg" selected>Vegetarian</option>
+                <option value="steak">Steak</option>
+            </select>
+        </p>
+    </form>
+    </p>
 
 </body>
 
