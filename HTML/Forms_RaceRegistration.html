@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Race Registration Example</title>
+</head>
+
+<body>
+    <h1>Race Registration</h1>
+    <main>
+        <form action="/submit?">
+            <div>
+
+                <p>
+                    <label for="input_firstname">First Name:</label>
+                    <input type="text" name="firstname" id="input_firstname" placeholder="Enter First Name" required>
+                    <label for="input_lastname">Last Name:</label>
+                    <input type="text" name="lastname" id="input_lastname" placeholder="Enter Last Name" required>
+                </p>
+            </div>
+            <div>
+                <!-- QUERY:how do I make 1 radio button of a group required? -->
+                <!-- ANSWER: the NAME connect them -->
+                <p>
+                    Select a Race:
+                    <br>
+                    <input type="radio" name="race" id="race_5k" value="race5" required>
+                    <label for="race_5k">Fun Run 5k</label>
+                    <br>
+                    <input type="radio" name="race" id="race_half" value="race13">
+                    <label for="race_half">Half Marathon</label>
+                    <br>
+                    <input type="radio" name="race" id="race_full" value="race26">
+                    <label for="race_full">Full Marathon</label>
+                </p>
+            </div>
+            <div>
+                <p>
+                    <label for="input_email">Email</label>
+                    <input type="email" name="email" id="input_email" placeholder="enter email" required>
+                    <label for="input_password">Password</label>
+                    <input type="password" name="password" id="input_password" placeholder="enter password"
+                        minlength="5" required>
+                </p>
+            </div>
+            <div>
+                <p>
+                    <label for="select_age">Select Age Group:</label>
+                    <select name="agegroup" id="select_age" required>
+                        <option value="under18">Under 18</option>
+                        <option value="age18_30">18-30</option>
+                        <option value="age31_50">31-50</option>
+                        <option value="over50">Over 50</option>
+                    </select>
+                </p>
+            </div>
+            <p>
+                <button>Register!</button>
+            </p>
+        </form>
+    </main>
+
+</body>
+
+</html>
