@@ -88,9 +88,35 @@
                 <option value="steak">Steak</option>
             </select>
         </p>
+        <p>
+            <label for="cheese">Amount of Cheese</label>
+            <input type="range" name="cheese_level" id="cheese" min="1" max="10" step="3">
+        </p>
+        <p>
+            <label for="text">Enter Comments</label>
+            <textarea name="requests" id="text" cols="30" rows="5" placeholder="enter here"></textarea>
+        </p>
     </form>
     </p>
 
+    <p>
+    <form action="/dummy">
+        <!-- built in browser validation examples: -->
+        <!-- the value --required-- forces it by browser
+        also adding min/maxlength forces character amount -->
+        <h2>Validation Demo</h2>
+        <div>
+            <label for="first_name">Enter First Name</label>
+            <input type="text" name="first" id="first_name" placeholder="first name" minlength="5" maxlength="10"
+                required>
+            <input type="email" placeholder="email" required>
+            <!-- email type forces an @ -->
+            <input type="url" placeholder="URL">
+            <button>Submit</button>
+        </div>
+    </form>
+
+    </p>
 </body>
 
 </html>
