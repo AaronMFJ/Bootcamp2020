@@ -1,0 +1,233 @@
+
+/* Page CSS */
+/* Examples below page CSS */
+
+/* The order your styles are in, matter.
+If there are two conflicting styles,
+it will be set to the latter in the cascade. */
+/* This also applies to multiple stylesheets */
+
+body {
+    background-color: #e9c46a;
+}
+
+section button {
+    font-size: 30px;
+    background-color: #2a9d8f;
+}
+
+/* ---------------------------------------- */
+
+/* UNIVERSAL SELECTORS */
+
+/* * {
+    * selects everything on a page
+} */
+
+/* ---------------------------------------- */
+
+/* ELEMENT SELECTOR
+
+selects all elements of given type
+h1 {
+    selects all h1;
+}
+
+h1, h2 {
+    selects both h1 and h2;
+} */
+
+h1, h2 {
+    color: #264653;
+}
+
+/* ---------------------------------------- */
+
+/* ID SELECTORS
+
+#IDName {
+    use # to select the ID of a label
+    css_lastname is the id="" name on html page for lastname
+} */
+ #css_lastname {
+     color: blue;
+ }
+
+#login, #signup {
+    font-size: 15px;
+    color: #f1faee;
+    background-color: #e76f51;
+}
+
+/* ---------------------------------------- */
+
+/* CLASS SELECTORS */
+
+/* .classname {
+    dot classname selects all matching classes;
+} */
+
+.titlespan {
+   background-color: #e63946; 
+   font-size: 20px;
+   color: #a8dadc;
+}
+
+/* ---------------------------------------- */
+
+/* DESCENDANT SELECTOR */
+
+/* selects items nested in another
+
+li a {
+    selects all <a>'s nested inside of <li>;
+} */
+
+/* span a {
+    color: red;
+} */
+
+/* or to get real specific, all anchors inside of class post */
+.post a {
+    color: green;
+}
+
+/* changes the footer link colors */
+footer a {
+    color: white;
+}
+
+/* ---------------------------------------- */
+
+/* ADJACENT SELECTOR */
+
+/* h1 + p {
+    select only the <p> that are immediately preceded by an <h1>;
+    no children or nests
+} */
+
+h2 + button {
+    font-size: 30px;
+}
+
+/* ---------------------------------------- */
+
+/* DIRECT DESCENDANT */
+
+/* div > li {
+    select only <li> that are direct children of a <div>;
+} */
+
+footer > a {
+    color: red;
+}
+
+/* ---------------------------------------- */
+
+/* ATTRIBUTE SELECTOR */
+
+/* input[type="text"] {
+    select all input elements where
+    the type attribute is set to "text"
+} */
+
+nav input[type="password"] {
+    color: red;
+}
+
+/* section.post <-- better alternative */
+section[class="post"] {
+background-color: #b7b7a4 ;
+}
+
+a[href*="google"] {
+    color: magenta;
+}
+
+/* ---------------------------------------- */
+
+/* PSEUDO CLASSES */
+
+/* :class
+
+a:hover {
+    selects and <a> element when "hovered"
+} */
+
+.post button:hover {
+    background-color:#e9c46a;
+}
+
+.post button:active {
+    background-color: white;
+}
+
+/* nth of type
+every other one, or every 5th, etc */
+
+/* .post:nth-of-type(2) will give ONLY the second */
+.post:nth-of-type(2n) {
+   background-color: grey ; 
+}
+
+/* ---------------------------------------- */
+
+/* PSEUDO ELEMENTS */
+/* keyword added to a selector that
+lets you style a particular part of 
+selected elements
+::after
+::before */
+
+h2::first-letter {
+  font-size: 30px;  
+}
+p::first-line {
+    color: purple;
+}
+::selection {
+    background-color: white;
+}
+
+/* ---------------------------------------- */
+
+/* SPECIFICITY */
+/* How the browser applies rules when there is a conflict */
+
+/* Basically if you target something specifically, it will stay that
+way. In the example below, we already told .post class to be
+yellow. So, button:hover will do anything else not conflicted.
+but if I change something NOT conflicted, like font-size, it applies to all
+*/
+
+/* 
+ID >
+Class >
+Element > 
+*/
+
+/* .post button:hover {
+    background-color:#e9c46a;
+} */
+button:hover {
+    background-color: greenyellow;
+    font-size: small;
+}
+
+/* ---------------------------------------- */
+
+/* INLINE STYLE */
+/* example in bravo.html under button */
+/* the most specific */
+
+/* ---------------------------------------- */
+
+/* !IMPORTANT */
+/* put it after property. tells browser to overall all styles */
+
+/* this changes all buttons to magenta */
+button {
+    background-color: magenta !important;
+}
+
+/* ---------------------------------------- */
