@@ -1,5 +1,58 @@
 /* alpha styles */
 
+/* dont forget the semicolon ; */
+
 h1 {
-    color: blue
+    color: blue;
+    background-color: green;
+}
+
+h2 {
+    color: teal;
+}
+
+button {
+    color: #FFFF00;
+    /* color: ff0; */
+    background-color: maroon;
+}
+
+p {
+    color: rgb(80, 101, 211);
+    line-height: 1.5;
+    /* can also add a % or px size */
+}
+
+/* text align examples */
+
+h3 {
+    /* text align only aligns within the element
+    for example if I set width to 50% of the page text align 
+    will align in that 50% */
+    text-align: center;
+    font-weight: normal;
+    width: 50%;
+    letter-spacing: 15px;
+    text-decoration: #0745ca overline wavy;
+}
+
+a {
+    /* remove underlines from links */
+    text-decoration: none;
+}
+
+div {
+    font-weight: bold;
+    /* font-weight: 700; is also bold */
+
+}
+
+
+/* changing font sizes and types*/
+h4 {
+    /* changing font size has tons of options with %, px, cm, mm, text */
+    font-size: 80px;
+    /* rely on web-safe fonts, unless installing custom */
+    /* Font stack, below, is preffered fonts to use in order */
+    font-family: Segoe UI, Futura, Ariel
 }
