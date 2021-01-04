@@ -1,3 +1,35 @@
 #cssconnection {
     color: red;
 }
+
+div {
+    width: 200px;
+    height: 200px;
+}
+
+#div1 {
+    background-color: #a8dadc;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    /* this setting will force the border
+    to subtract from width. Meaning
+    the box remains 200px instead of 210px
+    box-sizing: border-box; */
+}
+
+#div2 {
+    background-color: #457b9d;
+    border-style: dashed;
+    border-width: 5px;
+    border-color: #ffd166;
+    border-left-width: 8px;
+}
+
+/* border style shorthand */
+#div3 {
+    background-color: #1d3557;
+    border: 4px solid black;
+    border-left-width: 8px;
+    border-radius: 5%;
+}
