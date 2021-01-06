@@ -3,6 +3,28 @@
 }
 
 
+/* MARGIN
+The space between the outside of
+element and the neighboring elements */
+/* 
+PADDING
+The space between the border 
+inside of the element. If you use
+border-box, you subtract padding from
+the element content */
+
+
+body {
+    margin: 0;
+}
+
+h1 {
+    padding-left: 100px;
+    padding-top: 50px;
+    margin: 0;
+
+}
+
 div {
     width: 200px;
     height: 200px;
@@ -17,6 +39,7 @@ div {
     to subtract from width. Meaning
     the box remains 200px instead of 210px
     box-sizing: border-box; */
+    margin-left: 50px;
 }
 
 #div2 {

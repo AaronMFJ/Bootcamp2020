@@ -1,0 +1,20 @@
+/* block element */
+h1 {
+    background-color: palegoldenrod;
+    border: 1px solid black;
+
+    /* forces block to be inline */
+    display: inline;
+     /* forces inline to be block */
+    display: block;
+}
+
+
+/* inline elements ignore width and height */
+/* padding will work but will cover up elements*/
+/* margin works horizontally with inline element but not vertically */
+
+span {
+    background-color: palevioletred;
+    border: 1px solid red;
+}
