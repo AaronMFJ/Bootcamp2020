@@ -1,0 +1,43 @@
+section {
+    background-color: #ffddd2;
+    width: 800px;
+    height: 800px;
+}
+
+div {
+    background-color: #83c5be;
+    width: 50%;
+    height: 50%;
+    /* this % will be whatever the parent element
+    is, in this case section */
+}
+
+h3 {
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+article {
+    font-size: 10px;
+}
+
+h2 {
+margin-left: 1em;
+
+}
+
+/* If I scale this button up, it'll look ugly. So if
+I want to proportional scale, use em to keep relative
+to font size of element */
+button {
+    font-size: 30px;
+    padding: 0 30px;
+    border-radius: 15px;
+}
+
+/* Using ems here scales the button with the text */
+button {
+    font-size: 5em;
+    padding: 0 1em;
+    border-radius: .5em;
+}
