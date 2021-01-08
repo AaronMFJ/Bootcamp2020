@@ -7,8 +7,23 @@ h1 {
     display: inline;
      /* forces inline to be block */
     display: block;
+    /* hide an element */
+    display: none;
 }
 
+
+div {
+    height: 200px;
+    width: 200px;
+    background-color: olivedrab;
+    border: 5px solid black;
+
+    /* inline elements ignore width and height */
+    /* display: inline will smush it all together */
+    /* so to make our blocks horizontal, we add inline-block */
+    display: inline-block;
+
+}
 
 /* inline elements ignore width and height */
 /* padding will work but will cover up elements*/
@@ -18,3 +33,13 @@ span {
     background-color: palevioletred;
     border: 1px solid red;
 }
+
+/* Inline: Width and Heigh are ignored.
+Margin and padding push elements away
+horizontally but not vertically.
+
+Block: Break flow of document. Width Height and
+padding are respected
+
+Inline-Block: Behaved like an inline element except
+width, height, margin, and padding respected */
