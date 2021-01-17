@@ -1,0 +1,54 @@
+body {
+    font-family: Yusei Magic, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #1f1b29;
+}
+
+button {
+    font-family: yusei magic;
+    background: none;
+    color: #ffa260;
+    border: 2px solid;
+    padding: 1em 2em;
+    font-size: 1em;
+    /* transition: all 0.25s; */
+    transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+
+}
+
+button:hover {
+    border-color: #f1ff5c;
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}
+
+
+section {
+    width: 80%;
+    height: 800px;
+    background-color: purple;
+    margin: 0 auto;
+    /* background-image: url("https://images.unsplash.com/photo-1610812558464-23e6e02c9067?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2850&q=80");
+    background-size: cover;
+    background-position: bottom; */
+    background: center/40% no-repeat url("https://images.unsplash.com/photo-1610812558464-23e6e02c9067?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2850&q=80"), blue;
+}
+
+h1 {
+    font-size: 100px;
+    color: white;
+}
+
+main {
+    width: 60%;
+    margin: 0 auto;
+}
+
+p {
+    font-weight: 100;
+}
