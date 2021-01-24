@@ -1,0 +1,80 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1 {
+    text-align: center;
+}
+#container {
+    background-color: #003049;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid #003049;
+    
+    /* flexbox on */
+    display: flex;
+    
+    /* justify is main axis */
+    flex-direction: row;
+    justify-content: center;
+    /* justify-content: flex-end; */
+    /* flex-direction:column;
+    flex-direction: column-reverse; */
+    
+    /*align items and flex wrap is cross axis */
+    flex-wrap: wrap;
+    align-items: flex-start;
+    /* this will align the crossaxis item with the content inside element */
+    /* align-items: baseline; */
+
+    /* align-content: center; */
+}
+
+#container div {
+    width: 200px;
+    height: 200px;
+} 
+
+div:nth-of-type(3) {
+    align-self: flex-end;
+    flex-shrink: 2;
+}
+
+div:nth-of-type(2) {
+    align-self: center;
+}
+
+div:nth-of-type(5) {
+    flex-grow: 5;
+}
+
+
+/* H2 EXAMPLES
+FLEX SHORTHAND */
+
+/* flex syntax */
+/* 
+flex: flexgrow (unitless number)
+flex: flex-basis (width/height)
+flex: flex-grow flex-basis (1 30px)
+flex: flex-grow flex-shrink (1 2)
+flex: flex-grow flex-shrink flex-basis (2 2 10%) */
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    border: 5px solid black;
+    height: 500px;
+    display: flex;
+}
+
+main .sidebar {
+    background-color: purple;
+    border: 2px solid white;
+    flex: 1 2 300px;
+}
+
+main .maincontent {
+    background-color: green;
+    flex: 2 1 800px;
+}
